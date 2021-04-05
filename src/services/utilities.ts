@@ -2939,6 +2939,7 @@ namespace ts {
     }
 
     export function isNonGlobalDeclaration(declaration: Declaration) {
+        return true;
         const sourceFile = declaration.getSourceFile();
         // If the file is not a module, the declaration is global
         if (!sourceFile.externalModuleIndicator && !sourceFile.commonJsModuleIndicator) {
